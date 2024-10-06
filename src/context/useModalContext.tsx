@@ -4,7 +4,7 @@ import React, { NamedExoticComponent } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { IModalContext, PopupDirection, PopupTypes } from '@/lib/types/ModalContext.type';
-import SelectLanguageModal from '@/components/Modals/SelectLanguage/SelectLanguageMOdal';
+import SelectLanguageModal from '@/components/Modals/SelectLanguage/SelectLanguageModal';
 // import UpRating from '@/components/PopupModals/UpRating/UpRating';
 // import RejectParticipant from '@/components/PopupModals/RejectParticipant/RejectParticipant';
 
