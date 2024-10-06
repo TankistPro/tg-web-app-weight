@@ -1,17 +1,18 @@
+import React, { PropsWithChildren } from 'react';
 import Image from 'next/image';
-import React from 'react';
 
-const Step1 = () => {
+interface IStoryItem extends PropsWithChildren {
+    imgSrc: string;
+    imgAlt: string;
+}
+
+const StoryItem: React.FC<IStoryItem> = ({ children, imgSrc, imgAlt }) => {
     return (
         <div className="story-item">
-            <div className="story-item__content">
-                <span className="story-item__day">
-                    <p>1 day</p>
-                </span>
-            </div>
+            {children}
 
             <Image
-                src={'/img/welcome-stories/story-1.png'}
+                src={imgSrc}
                 width={390}
                 height={840}
                 sizes="100vw"
@@ -20,10 +21,10 @@ const Step1 = () => {
                     height: '100%',
                 }}
                 priority
-                alt={'story-1'}
+                alt={imgAlt}
             />
         </div>
     );
 };
 
-export default Step1;
+export default StoryItem;
