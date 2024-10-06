@@ -1,13 +1,8 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 
 import '../scss/global.scss';
 
-const geistSans = localFont({
-    src: './fonts/GeistVF.woff',
-    variable: '--font-geist-sans',
-    weight: '100 900',
-});
+import { ManropeFonts } from './fonts/font';
 
 export const metadata: Metadata = {
     title: 'App weight',
@@ -21,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable}`}>{children}</body>
+            <body className={`${ManropeFonts.className}`}>{children}</body>
         </html>
     );
 }
