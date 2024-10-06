@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
+
 const nextConfig = {
-    i18n: {
-        defaultLocale: 'en',
-        locales: ['en', 'ru'],
-        localeDetection: false,
-    },
+    reactStrictMode: false,
+    productionBrowserSourceMaps: true,
+    poweredByHeader: false,
     headers() {
         return [
             {
@@ -18,7 +21,7 @@ const nextConfig = {
             },
         ];
     },
-    webpack(config, { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }) {
+    webpack(config) {
         config.module.rules.push({
             test: /\.svg$/i,
             issuer: /\.[jt]sx?$/,
@@ -29,4 +32,4 @@ const nextConfig = {
     },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

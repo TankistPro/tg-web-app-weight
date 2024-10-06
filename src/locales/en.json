@@ -1,0 +1,26 @@
+{
+    "WelcomePage": {
+        "selectLanguageButton": "Select language",
+        "story1": {
+            "value": "1 day"
+        },
+        "story2": {
+            "value": "2 weeks",
+            "text": "Strict diet"
+        },
+        "story3": {
+            "value": "3 weeks",
+            "text": "Can't lose weight?"
+        },
+        "story4": {
+            "text": "Lacking motivation? Don't want to go on a strict diet and exhaust yourself with workouts?"
+        },
+        "story5": {
+            "text": "There is a way out! App <span>Slim</span>$N$<span>Rich</span>!"
+        },
+        "story6": {
+            "value": "3 weeks",
+            "text": "Results without diets and workouts!"
+        }
+    }
+}

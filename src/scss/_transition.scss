@@ -1,0 +1,87 @@
+// FADE
+.fade-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.fade-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.fade-enter-active,
+.fade-exit-active {
+    transition: opacity 500ms, transform 500ms;
+}
+
+// popupTransition TopBot
+.popupTransitionTopBot-enter {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.popupTransitionTopBot-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.popupTransitionTopBot-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.popupTransitionTopBot-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.popupTransitionTopBot-enter-active,
+.popupTransitionTopBot-exit-active {
+    transition: opacity 500ms, transform 500ms;
+}
+
+// popupTransition BotTop
+.popupTransitionBotTop-enter {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.popupTransitionBotTop-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.popupTransitionBotTop-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.popupTransitionBotTop-exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.popupTransitionBotTop-enter-active,
+.popupTransitionBotTop-exit-active {
+    transition: opacity 500ms, transform 500ms;
+}
+
+// FADE_CONTEST_HISTORY
+.fadeHistory-enter {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.fadeHistory-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.fadeHistory-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.fadeHistory-exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.fadeHistory-enter-active,
+.fadeHistory-exit-active {
+    transition: opacity 1000ms, transform 1000ms;
+}

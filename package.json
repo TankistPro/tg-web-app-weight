@@ -10,11 +10,13 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "classnames": "^2.5.1",
         "next": "14.2.14",
-        "next-i18next": "^15.3.1",
+        "next-intl": "^3.20.0",
         "react": "^18",
         "react-dom": "^18",
         "react-insta-stories": "^2.7.0",
+        "react-transition-group": "^4.4.5",
         "sass": "^1.79.4",
         "zustand": "^5.0.0-rc.2"
     },
@@ -23,6 +25,7 @@
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
+        "@types/react-transition-group": "^4.4.11",
         "eslint": "^8",
         "eslint-config-next": "14.2.14",
         "typescript": "^5"

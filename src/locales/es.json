@@ -1,0 +1,26 @@
+{
+    "WelcomePage": {
+        "selectLanguageButton": "Seleccione idioma",
+        "story1": {
+            "value": "1 día"
+        },
+        "story2": {
+            "value": "2 semanas",
+            "text": "Dieta estricta"
+        },
+        "story3": {
+            "value": "3 semanas",
+            "text": "¿No puedes perder peso?"
+        },
+        "story4": {
+            "text": "¿Falta de motivación? ¿No quieres seguir una dieta estricta y agotarte con los entrenamientos?"
+        },
+        "story5": {
+            "text": "¡Hay una salida! Aplicación < span>Delgada < / span>N N!<span>Rica</span>!"
+        },
+        "story6": {
+            "value": "3 semanas",
+            "text": "¡Resultados sin dietas y entrenamientos!"
+        }
+    }
+}
