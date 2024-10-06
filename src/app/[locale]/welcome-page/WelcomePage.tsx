@@ -103,7 +103,7 @@ const WelcomePage = () => {
                         ),
                     },
                 ]}
-                defaultInterval={3000}
+                defaultInterval={30000}
             />
         </div>
     );

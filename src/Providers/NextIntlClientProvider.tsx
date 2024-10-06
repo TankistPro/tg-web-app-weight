@@ -17,7 +17,7 @@ export const NextIntlProvider = ({
             locale={locale}
             messages={messages}
             defaultTranslationValues={{
-                span: (text) => <span>${text}</span>,
+                span: (text) => <span>{text}</span>,
             }}
         >
             {children}
