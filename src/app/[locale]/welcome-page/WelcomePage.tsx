@@ -36,7 +36,7 @@ const WelcomePage = () => {
                 stories={[
                     {
                         content: (props) => (
-                            <StoryItem imgSrc={'/img/welcome-stories/story-1.png'} imgAlt={'story-1'}>
+                            <StoryItem imgSrc={'/img/welcome-stories/story-1.svg'} imgAlt={'story-1'}>
                                 <div className="story-item__content">
                                     <span className="story-item__day">
                                         <p>{t('story1.value')}</p>
@@ -47,7 +47,7 @@ const WelcomePage = () => {
                     },
                     {
                         content: (props) => (
-                            <StoryItem imgSrc={'/img/welcome-stories/story-2.png'} imgAlt={'story-2'}>
+                            <StoryItem imgSrc={'/img/welcome-stories/story-2.svg'} imgAlt={'story-2'}>
                                 <div className="story-item__content">
                                     <span className="story-item__day">
                                         <p>{t('story2.value')}</p>
@@ -60,7 +60,7 @@ const WelcomePage = () => {
                     },
                     {
                         content: (props) => (
-                            <StoryItem imgSrc={'/img/welcome-stories/story-3.png'} imgAlt={'story-3'}>
+                            <StoryItem imgSrc={'/img/welcome-stories/story-3.svg'} imgAlt={'story-3'}>
                                 <div className="story-item__content">
                                     <span className="story-item__day">
                                         <p>{t('story3.value')}</p>
@@ -73,7 +73,7 @@ const WelcomePage = () => {
                     },
                     {
                         content: (props) => (
-                            <StoryItem imgSrc={'/img/welcome-stories/story-4.png'} imgAlt={'story-4'}>
+                            <StoryItem imgSrc={'/img/welcome-stories/story-4.svg'} imgAlt={'story-4'}>
                                 <div className="story-item__content">
                                     <p className="story-item__text">{t('story4.text')}</p>
                                 </div>
@@ -82,7 +82,7 @@ const WelcomePage = () => {
                     },
                     {
                         content: (props) => (
-                            <StoryItem imgSrc={'/img/welcome-stories/story-5.png'} imgAlt={'story-5'}>
+                            <StoryItem imgSrc={'/img/welcome-stories/story-5.svg'} imgAlt={'story-5'}>
                                 <div className="story-item__content">
                                     <p className="story-item__text">{t.rich('story5.text')}</p>
                                 </div>
@@ -91,7 +91,7 @@ const WelcomePage = () => {
                     },
                     {
                         content: (props) => (
-                            <StoryItem imgSrc={'/img/welcome-stories/story-6.png'} imgAlt={'story-6'}>
+                            <StoryItem imgSrc={'/img/welcome-stories/story-6.svg'} imgAlt={'story-6'}>
                                 <div className="story-item__content">
                                     <span className="story-item__day">
                                         <p>{t('story6.value')}</p>
