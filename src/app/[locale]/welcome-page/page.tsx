@@ -8,7 +8,6 @@ interface Props {
 }
 
 const Page: NextPage<Props> = ({ searchParams: { showWelcomeStories } }) => {
-    console.log(showWelcomeStories);
     return <WelcomePage showWelcomeStoriesParam={showWelcomeStories === undefined || showWelcomeStories === 'true'} />;
 };
 
