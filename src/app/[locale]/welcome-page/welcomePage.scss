@@ -59,11 +59,73 @@
 
     .select-language-button {
         position: absolute;
-        bottom: 25px;
+        bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
         max-width: 360px;
         z-index: 1000;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 360px;
+        z-index: 1000;
+    }
+
+    &__start {
+        .start-container {
+            &__top {
+            }
+
+            &__logo {
+                text-align: center;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+
+                h3 {
+                    color: #8e00e5;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    font-weight: 800;
+                    font-size: 1.875rem;
+                    line-height: 39px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #322b34;
+                    line-height: 22px;
+                }
+            }
+
+            &__checkbox {
+                margin-top: 30px;
+
+                line-height: 20px;
+
+                p,
+                a {
+                    color: #322b34;
+                }
+
+                a {
+                    font-weight: 500;
+                }
+            }
+        }
     }
 }

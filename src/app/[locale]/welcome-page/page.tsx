@@ -1,10 +1,15 @@
 import { NextPage } from 'next';
 import WelcomePage from './WelcomePage';
 
-interface Props {}
+interface Props {
+    searchParams: {
+        showWelcomeStories: string | undefined;
+    };
+}
 
-const Page: NextPage<Props> = ({}) => {
-    return <WelcomePage />;
+const Page: NextPage<Props> = ({ searchParams: { showWelcomeStories } }) => {
+    console.log(showWelcomeStories);
+    return <WelcomePage showWelcomeStoriesParam={showWelcomeStories === undefined || showWelcomeStories === 'true'} />;
 };
 
 export default Page;

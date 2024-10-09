@@ -7,10 +7,12 @@ export const NextIntlProvider = ({
     children,
     locale,
     messages,
+    timeZone,
 }: Readonly<{
     children: React.ReactNode;
     locale: string;
     messages: AbstractIntlMessages | undefined;
+    timeZone: any;
 }>) => {
     return (
         <NextIntlClientProvider
@@ -19,6 +21,7 @@ export const NextIntlProvider = ({
             defaultTranslationValues={{
                 span: (text) => <span>{text}</span>,
             }}
+            timeZone={timeZone}
         >
             {children}
         </NextIntlClientProvider>

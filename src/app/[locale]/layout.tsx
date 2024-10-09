@@ -5,7 +5,7 @@ import '../../scss/global.scss';
 import { ManropeFonts } from '../fonts/font';
 import ContextProvider from '@/hoc/ContextProvider';
 
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTimeZone } from 'next-intl/server';
 import { NextIntlProvider } from '@/Providers/NextIntlClientProvider';
 
 export const metadata: Metadata = {
@@ -21,11 +21,12 @@ export default async function RootLayout({
     params: { locale: string };
 }>) {
     const messages = await getMessages();
+    const timeZone = await getTimeZone();
 
     return (
         <html lang={locale}>
             <body className={`${ManropeFonts.className}`}>
-                <NextIntlProvider locale={locale} messages={messages}>
+                <NextIntlProvider locale={locale} messages={messages} timeZone={timeZone}>
                     <ContextProvider>{children}</ContextProvider>
                 </NextIntlProvider>
             </body>

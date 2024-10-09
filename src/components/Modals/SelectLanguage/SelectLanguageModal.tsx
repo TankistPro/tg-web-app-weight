@@ -7,16 +7,20 @@ import { useRouter } from '@/i18n/routing';
 import './selectLanguageModal.scss';
 import RadioButton from '@/components/UI/RadioButton/RadioButton';
 import { useModal } from '@/context/useModalContext';
+import { useSearchParams } from 'next/navigation';
 
 const SelectLanguageModal = () => {
     const locale = useLocale();
     const router = useRouter();
+    const params = useSearchParams();
+
     const { togglePopup } = useModal();
 
     const changeLanguage = (value: 'en' | 'es') => {
         togglePopup(false);
+
         setTimeout(() => {
-            router.push('/welcome-page', { locale: value });
+            router.push(`/welcome-page?${params.toString()}`, { locale: value });
         }, 500);
     };
 
