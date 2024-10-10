@@ -1,30 +1,14 @@
 import React, { PropsWithChildren } from 'react';
 import Image from 'next/image';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 interface IStoryItem extends PropsWithChildren {
-    imgSrc: string;
+    imgSrc: string | StaticImport;
     imgAlt: string;
 }
 
 const StoryItem: React.FC<IStoryItem> = ({ children, imgSrc, imgAlt }) => {
-    return (
-        <div className="story-item">
-            {children}
-
-            <Image
-                src={imgSrc}
-                width={390}
-                height={840}
-                sizes="100vw"
-                style={{
-                    width: '100%',
-                    height: '100%',
-                }}
-                priority
-                alt={imgAlt}
-            />
-        </div>
-    );
+    return <div className="story-item">{children}</div>;
 };
 
 export default StoryItem;

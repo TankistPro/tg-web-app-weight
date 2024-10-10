@@ -9,7 +9,7 @@ interface IButton extends PropsWithChildren, ButtonHTMLAttributes<HTMLButtonElem
 
 const Button: React.FC<IButton> = ({ id, variant, disabled, onClick, children, ...props }) => {
     return (
-        <div className={classNames(`button ${variant}`)} id={id}>
+        <div className={classNames(`button ${variant}`, { disabled: disabled })} id={id}>
             <button onClick={onClick} disabled={disabled} {...props}>
                 {children}
             </button>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 import '../../scss/global.scss';
 
@@ -11,6 +11,13 @@ import { NextIntlProvider } from '@/Providers/NextIntlClientProvider';
 export const metadata: Metadata = {
     title: 'App weight',
     description: 'Telegram App weight',
+};
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
 };
 
 export default async function RootLayout({

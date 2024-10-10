@@ -11,10 +11,8 @@
         align-items: center;
         position: relative;
 
-        img {
-            max-width: 400px;
-            min-height: 800px;
-            max-height: 840px;
+        svg {
+            z-index: 0;
         }
 
         &__content {
@@ -28,6 +26,7 @@
             gap: 10px;
             max-width: 390px;
             width: 90%;
+            z-index: 1;
         }
 
         &__day {
@@ -59,7 +58,7 @@
 
     .select-language-button {
         position: absolute;
-        bottom: 5px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
@@ -69,7 +68,7 @@
 
     .button {
         position: absolute;
-        bottom: 70px;
+        bottom: 80px;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
@@ -78,8 +77,19 @@
     }
 
     &__start {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
         .start-container {
             &__top {
+            }
+
+            &__bottom {
+                background-color: #fff;
+                width: calc(100% + var(--page_padding) * 2);
+                height: calc(100svh);
+                margin: 0 calc(var(--page_padding) * -1);
             }
 
             &__logo {
@@ -127,5 +137,17 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 400px) {
+    .story-item svg {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 429px) {
+    .story-item svg {
+        transform: scale(1.2);
     }
 }
